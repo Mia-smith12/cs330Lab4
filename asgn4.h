@@ -82,6 +82,17 @@ int* reverseMyArrayPlease(int size, int *myArray){
 /* ========================================================================= */
 /* ~~~~~~~~~~~~~~~~~~~~~ your functions go here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Note: main() goes in the asgn4.c file                                     */
+int* convertDecToBin(int decNum){
+    int *ptrToArray;
+    ptrToArray = malloc(NUMBER_OF_BITS * sizeof(int));
+    int i;
+    //  method to convert deciaml to binary using division method
+     for (int i = NUMBER_OF_BITS - 1; decimal > 0 && i >= 0; i--) {
+        ptrToArray[i] = decimal % 2;  
+        decimal = decimal / 2;        
+    }
+    return ptrToArray;
+}
 
 
 
